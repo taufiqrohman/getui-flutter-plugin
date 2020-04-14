@@ -45,7 +45,7 @@
       [self setBadge:call result:result];
   } else if([@"resetBadge" isEqualToString:call.method]) {
       [GeTuiSdk resetBadge];
-      [[UIApplication sharedApplication] setApplicationBadgeNumber:0];
+      [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
   } else if([@"resume" isEqualToString:call.method]) {
       [GeTuiSdk setPushModeForOff:NO];
   } else if([@"stopPush" isEqualToString:call.method]) {
