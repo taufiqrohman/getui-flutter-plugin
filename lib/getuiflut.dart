@@ -49,6 +49,7 @@ class Getuiflut {
   }
 
   void stopPush() {
+    print("Stopping push");
     _channel.invokeMethod('stopPush');
   }
 

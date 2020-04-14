@@ -46,9 +46,9 @@
   } else if([@"resetBadge" isEqualToString:call.method]) {
       [GeTuiSdk resetBadge];
   } else if([@"resume" isEqualToString:call.method]) {
-      [GeTuiSdk setPushModeForOff:YES];
-  } else if([@"stopPush" isEqualToString:call.method]) {
       [GeTuiSdk setPushModeForOff:NO];
+  } else if([@"stopPush" isEqualToString:call.method]) {
+      [GeTuiSdk setPushModeForOff:YES];
   }else {
     result(FlutterMethodNotImplemented);
   }
