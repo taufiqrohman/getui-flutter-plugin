@@ -48,6 +48,7 @@
       [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
   } else if([@"resume" isEqualToString:call.method]) {
       [GeTuiSdk setPushModeForOff:NO];
+      [GeTuiSdk resume];
   } else if([@"stopPush" isEqualToString:call.method]) {
       [GeTuiSdk setPushModeForOff:YES];
   }else {
