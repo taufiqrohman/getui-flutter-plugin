@@ -51,7 +51,9 @@
       [GeTuiSdk resume];
   } else if([@"stopPush" isEqualToString:call.method]) {
       [GeTuiSdk setPushModeForOff:YES];
-  }else {
+  } else if([@"destroy" isEqualToString:call.method]) {
+      [GeTuiSdk destroy];
+  } else {
     result(FlutterMethodNotImplemented);
   }
 }

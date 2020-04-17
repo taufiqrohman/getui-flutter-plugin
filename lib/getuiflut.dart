@@ -56,6 +56,10 @@ class Getuiflut {
   void onActivityCreate() {
     _channel.invokeMethod('onActivityCreate');
   }
+
+  void destroy() {
+    _channel.invokeMethod('destroy');
+  }
   
   void bindAlias(String alias,String sn) {
     if(Platform.isAndroid) {
